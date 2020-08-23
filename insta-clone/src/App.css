@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+
+.app {
+  background-color: #fafafa;
+}
+
+.app__header {
+  /* making header stick to the top using these 3 lines of code */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* regardless of how big the container is keep the aspect ratio --> it won't look like stretched or broken */
+  object-fit: contain;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__header > img {
+  height: 40px;
+  width: 120px;
+}
+
+.app__headerImage {
+  height: 40px;
+  width: 120px;
+  object-fit: contain;
+}
+
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__posts {
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.app__postsRight {
+  margin-right:20px;
+  width: 10%;
+}
+.app__postsLeft
+{
+margin-right:50px;
+}
+
+.app__footer {
+  position: sticky;
+  bottom: 0;
+  object-fit: contain;
+  background-color: white;
+  border-top: 1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.msg {
+  padding: 20px;
+    color:black;
+    
+  background-color: white;
+}
+
+.app__loginContainer > button {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.app__loginContainer > button:hover {
+  background-color: limegreen;
+  border-radius: 10px;
+  color: white;
+}
+
+.app__loginContainer1 > button {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.app__loginContainer1 > button:hover {
+  background-color: #e22b4c;
+  border-radius: 10px;
+  color: white;
+}
